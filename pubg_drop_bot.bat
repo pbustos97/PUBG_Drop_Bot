@@ -1,1 +1,1 @@
-start cmd.exe /k "python.exe D:\Daniel\Documents\Discord\pubg_drop_bot\drop_bot.py"
+start cmd.exe /k "python.exe D:\Daniel\Documents\Discord\pubg_drop_bot\pubg_drop_bot\drop_bot.py"
