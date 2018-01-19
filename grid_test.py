@@ -1,79 +1,23 @@
 #!/usr/bin/python
 import random
 import sys
+grid1x = ['A','B','C','D','E','F','G','H']
+grid1y = ['A','J','K','L','M','N','O','P']
+grid2x = ['A','B','C','D','E','F','G','H']
+grid2y = ['A','J','K','L','M','N','O','P']
 def grid(number):
     num1 = None
     num2 = None
     if number is 2:
         rando1 = random.randint(0,7)
         rando2 = random.randint(0,7)
-        if rando1 is 0:
-            num1 = 'A'
-        elif rando1 is 1:
-            num1 = 'B'
-        elif rando1 is 2:
-            num1 = 'C'
-        elif rando1 is 3:
-            num1 = 'D'
-        elif rando1 is 4:
-            num1 = 'E'
-        elif rando1 is 5:
-            num1 = 'F'
-        elif rando1 is 6:
-            num1 = 'G'
-        elif rando1 is 7:
-            num1 = 'H'
-        if rando2 is 0:
-            num2 = 'A'
-        elif rando2 is 1:
-            num2 = 'J'
-        elif rando2 is 2:
-            num2 = 'K'
-        elif rando2 is 3:
-            num2 = 'L'
-        elif rando2 is 4:
-            num2 = 'M'
-        elif rando2 is 5:
-            num2 = 'N'
-        elif rando2 is 6:
-            num2 = 'O'
-        elif rando2 is 7:
-            num2 = 'P'
+        num1 = grid2x[rando1]
+        num2 = grid2y[rando2]
     elif number is 1:
         rando1 = random.randint(0,7)
         rando2 = random.randint(0,7)
-        if rando1 is 0:
-            num1 = 'A'
-        elif rando1 is 1:
-            num1 = 'B'
-        elif rando1 is 2:
-            num1 = 'C'
-        elif rando1 is 3:
-            num1 = 'D'
-        elif rando1 is 4:
-            num1 = 'E'
-        elif rando1 is 5:
-            num1 = 'F'
-        elif rando1 is 6:
-            num1 = 'G'
-        elif rando1 is 7:
-            num1 = 'H'
-        if rando2 is 0:
-            num2 = 'A'
-        elif rando2 is 1:
-            num2 = 'J'
-        elif rando2 is 2:
-            num2 = 'K'
-        elif rando2 is 3:
-            num2 = 'L'
-        elif rando2 is 4:
-            num2 = 'M'
-        elif rando2 is 5:
-            num2 = 'N'
-        elif rando2 is 6:
-            num2 = 'O'
-        elif rando2 is 7:
-            num2 = 'P'
+        num1 = grid1x[rando1]
+        num2 = grid1y[rando2]
     result = num1 + num2
     return result
 
