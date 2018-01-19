@@ -1,1 +1,0 @@
-pubg_drop_bot = 'NDAzNzM4Mzc0MjY0ODQ4Mzk2.DUL0ug.YHbVmCKb7rpmh-eLEjNafelUkl4'
