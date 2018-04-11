@@ -6,7 +6,7 @@ grid1y = ['A','J','K','L','M','N','O','P']
 grid2x = ['A','B','C','D','E','F','G','H']
 grid2y = ['A','J','K','L','M','N','O','P']
 grid3x = ['A','B','C','D']
-grid3y = ['A','B','C','D']
+grid3y = ['A','E','F','G']
 def grid(number):
     num1 = None
     num2 = None
