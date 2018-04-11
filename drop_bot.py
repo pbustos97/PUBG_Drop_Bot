@@ -20,13 +20,15 @@ async def on_message(message):
         await bot.send_message(message.channel, pubgmap(1).format(message))
     elif message.content.startswith('pubg drop') and ' 2' in message.content:
         await bot.send_message(message.channel, pubgmap(2).format(message))
+    elif message.content.startswith('pubg drop') and ' 3' in message.content:
+        await bot.send_message(message.channel, pubgmap(3).format(message))
     elif message.content.startswith('pubg drop'):
         await bot.send_message(message.channel, 'Invalid Parameters!'.format(message))
     elif message.content.startswith('pubg grid'):
-        if '1' in message.content:
+        if '1' or '2' in message.content:
             await bot.send_message(message.channel, grid(1).format(message))
-        elif '2' in message.content:
-            await bot.send_message(message.channel, grid(2).format(message))
+        elif '3' in message.content:
+            await bot.send_message(message.channel, grid(3).format(message))
         else:
             await bot.send_message(message.channel, 'Invalid Parameters!'.format(message))
 
